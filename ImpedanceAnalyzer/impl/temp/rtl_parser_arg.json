@@ -6,7 +6,15 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/CLKDividerModule.v",
+   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/ImzTop.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/ResetGen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/ClkDivider.v",
    "Type" : "verilog"
   },
   {
@@ -14,19 +22,19 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/OscillatorModule.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/Interpolator.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/ImzpedanceTop.v",
+   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/Oscillator.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/ResetGen.v",
+   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/ReadPhase.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/ImpledanzeAnalyzer/Src/ImpedanceAnalyzer/src/RxData.v",
    "Type" : "verilog"
   }
  ],

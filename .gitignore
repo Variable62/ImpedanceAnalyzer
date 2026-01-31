@@ -14,3 +14,9 @@ work/
 # OS
 .DS_Store
 Thumbs.db
+# Gowin / FPGA generated
+impl/
+gowin_rpll/
+*.ipc
+*.mod
+*_tmp.v
