@@ -20,3 +20,4 @@ gowin_rpll/
 *.ipc
 *.mod
 *_tmp.v
+*.gprj.user
