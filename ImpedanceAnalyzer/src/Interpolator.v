@@ -14,8 +14,8 @@ module Interpolator (
     input   wire        Fg_RESETn,
     input   wire [31:0] out_1,  // Y[n-1]
     input   wire [31:0] out_2, // Y[n-2]
-    input   wire [2:0]  DDSMode,
-    input   wire        DDSEnable,
+    input   wire [2:0]  Mode,
+    input   wire        Enable,
     output  wire [11:0] InterpOut
 );
 //----------------------------------------//
@@ -38,7 +38,7 @@ module Interpolator (
         N <= 32'd1;
     end
         else    begin
-            case (DDSMode)
+            case (Mode)
                     0: N <= 32'd1; 
                     1: N <= 32'd53687091;    
                     2: N <= 32'd5368709;
@@ -53,7 +53,7 @@ module Interpolator (
         Enable_delay <= 0;
     end
     else begin
-            Enable_delay <= DDSEnable;
+            Enable_delay <= Enable;
         end
     end
 

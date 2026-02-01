@@ -12,11 +12,11 @@
 module Oscillator (
     input  wire        Fg_CLK,
     input  wire        Fg_RESETn,
-    input  wire        DDSEnable,
-    input  wire        DDSReady,
+    input  wire        Enable,
+    input  wire        Ready,
     input  wire [31:0] init_1,     // sin(b)
     input  wire [31:0] init_2,     // 2cos(b)
-    input  wire [ 2:0] DDSMode,
+    // input  wire [ 2:0] DDSMode,
     
     output wire [31:0] out_1,
     output wire [31:0] out_2
@@ -46,10 +46,10 @@ module Oscillator (
         if (!Fg_RESETn) begin
             rout_1 <= 32'd0;
         end
-        else if (DDSReady) begin
+        else if (Ready) begin
             rout_1 <= init_1; // Sin(B)
         end
-        else if (DDSEnable) begin
+        else if (Enable) begin
             rout_1 <= rOut;
         end
         else begin
@@ -61,10 +61,10 @@ module Oscillator (
         if (!Fg_RESETn) begin
             rout_2 <= 32'd0;
         end
-        else if (DDSReady) begin
+        else if (Ready) begin
             rout_2 <= 32'd0;
         end
-        else if (DDSEnable) begin
+        else if (Enable) begin
             rout_2 <= rout_1;
         end
         else begin
@@ -76,7 +76,7 @@ module Oscillator (
         if (!Fg_RESETn) begin
             rA <= 32'd0;
         end
-        else if (DDSReady) begin
+        else if (Ready) begin
             rA  <= init_2;
         end
         else    begin
